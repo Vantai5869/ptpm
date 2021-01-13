@@ -11,7 +11,7 @@
         DataContext="{StaticResource FoodVM}"
         WindowStartupLocation="CenterScreen"
         x:Name="window"
-        Title="Món ăn" Height="550" Width="1000">
+        Title="Món ăn" Height="550" Width="1050">
     <i:Interaction.Triggers>
         <i:EventTrigger EventName="Loaded">
             <i:InvokeCommandAction Command="{Binding LoadedWindowCommand}"/>
@@ -20,22 +20,21 @@
     <Grid>
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="199*" />
-            <ColumnDefinition Width="16*" />
             <ColumnDefinition Width="282*"/>
         </Grid.ColumnDefinitions>
-        <Grid Grid.Column="0" Background="BurlyWood" Grid.ColumnSpan="2" Margin="0,0,31.456,-0.2">
+        <Grid Grid.Column="0" Background="BurlyWood" >
             <Grid.RowDefinitions>
                 <RowDefinition Height="4*"/>
                 <RowDefinition Height="1*"/>
             </Grid.RowDefinitions>
-            <Grid Grid.Row="0">
+            <Grid Grid.Row="0" Margin="0 35 0 0">
                 <StackPanel>
                     <TextBlock FontFamily="Cambria" Margin="5 0 0 0" FontSize="20" FontWeight="DemiBold"> Name:</TextBlock>
                     <TextBox Margin="5" Text="{Binding name, UpdateSourceTrigger=PropertyChanged}" Background="AliceBlue" />
                     <TextBlock FontFamily="Cambria" Margin="5 0 0 0" FontSize="20" FontWeight="DemiBold" > Price:</TextBlock>
                     <TextBox Margin="5" Name="tbPrice" Text="{Binding price, UpdateSourceTrigger=PropertyChanged}" Background="AliceBlue" />
-                    <TextBlock FontFamily="Cambria" Margin="5 0 0 0" FontSize="20" FontWeight="DemiBold"> Type of Food: 
-                        <TextBox Name="tbFoodTypeId" Visibility="Collapsed"  /></TextBlock>
+                    <TextBlock FontFamily="Cambria" Margin="5 0 0 0" FontSize="20" FontWeight="DemiBold"> Type of Food:                 
+                    </TextBlock>
                     <ComboBox
                         SelectedItem="{Binding SelectedItemFTypeOnPost}" 
                         materialDesign:HintAssist.Hint="Loại món:" 
@@ -73,18 +72,18 @@
                 </DockPanel>
             </Grid>
         </Grid>
-        <Grid Background="LightBlue" Grid.Column="1" Grid.ColumnSpan="2" Margin="0.4,0,-0.4,-0.2">
+        <Grid Background="LightBlue" Grid.Column="1" >
             <Grid.RowDefinitions>
                 <RowDefinition Height="1*"/>
                 <RowDefinition Height="4*"/>
             </Grid.RowDefinitions>
-            <DockPanel>
+            <DockPanel Background="LightGray">
                 <ComboBox  
                     Width="120" Height="35" Background="AliceBlue" 
                     SelectedItem="{Binding SelectedItemFType}"
                     materialDesign:HintAssist.Hint="Loại món ăn"
                     ItemsSource="{Binding fTypeList}"
-                    HorizontalAlignment="Left" Margin="5">
+                    HorizontalAlignment="Left" Margin="30 0 5 0">
                     <ComboBox.ItemTemplate>
                         <DataTemplate>
                             <StackPanel >
@@ -94,7 +93,8 @@
                         </DataTemplate>
                     </ComboBox.ItemTemplate>
                 </ComboBox>
-                <TextBox x:Name="txtSearch" Text="{Binding Path=Filter, UpdateSourceTrigger=PropertyChanged}"  materialDesign:HintAssist.Hint=" Nhập tên món ăn:" Width="250" Height="35" Background="AliceBlue" Margin="5"/>
+                <TextBox x:Name="txtSearch" Text="{Binding Path=Filter, UpdateSourceTrigger=PropertyChanged}" 
+                         materialDesign:HintAssist.Hint=" Nhập tên món ăn:" Width="250" Height="35" Background="AliceBlue" Margin="30 0 5 0"/>
                 <Button Margin="5" Background="CadetBlue" Width="80" Height="35" HorizontalAlignment="Right">
                     <materialDesign:PackIcon VerticalAlignment="Top" Width="20" Height="20" Kind="Magnify"/>
                 </Button>

@@ -71,7 +71,7 @@
                 <TextBlock HorizontalAlignment="Center" Margin="0 30" FontSize="20" >Tổng thanh toán: <TextBlock FontWeight="Bold" x:Name="payTotal" ></TextBlock></TextBlock>
             </Grid>
         </Grid>
-             <Button HorizontalAlignment="Center" VerticalAlignment="Bottom"  FontSize="18" Click="PrintClick">In hóa đơn</Button>
+             <Button HorizontalAlignment="Right" VerticalAlignment="Bottom"  FontSize="18" Click="PrintClick">In hóa đơn</Button>
         </Grid>
        
     </ScrollViewer>
