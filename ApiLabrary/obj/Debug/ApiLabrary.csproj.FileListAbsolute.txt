@@ -1,0 +1,4 @@
+G:\Laptrinh\phatTrienPhanMem\ApiLabrary\obj\Debug\ApiLabrary.csprojAssemblyReference.cache
+G:\Laptrinh\phatTrienPhanMem\ApiLabrary\obj\Debug\ApiLabrary.Properties.Resources.resources
+G:\Laptrinh\phatTrienPhanMem\ApiLabrary\obj\Debug\ApiLabrary.csproj.GenerateResource.cache
+G:\Laptrinh\phatTrienPhanMem\ApiLabrary\obj\Debug\ApiLabrary.csproj.CoreCompileInputs.cache

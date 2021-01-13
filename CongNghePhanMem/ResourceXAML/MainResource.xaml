@@ -1,0 +1,15 @@
+﻿<ResourceDictionary
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+    xmlns:viewmodel="clr-namespace:CongNghePhanMem.ViewModel">
+    <viewmodel:MainViewModel x:Key="MainVM" />
+    <viewmodel:BookingViewModel x:Key="BookingVM" />
+    <viewmodel:FoodTypeViewModel x:Key="FoodTypeVM" />
+    <viewmodel:FoodViewModel x:Key="FoodVM" />
+    <viewmodel:TableViewModel x:Key="TableVM" />
+    <viewmodel:FoodOderViewModel x:Key="FoodOderVM" />
+    <viewmodel:UserViewModel x:Key="UserVM" />
+    <viewmodel:OderBillViewModel x:Key="OderBillVM" />
+    <viewmodel:OverviewViewModel x:Key="OverviewVM" />
+    <viewmodel:ViewModel x:Key="VM" />
+</ResourceDictionary>

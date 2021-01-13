@@ -1,0 +1,15 @@
+D:\WINDOW_C#\ptrien\phatTrienPhanMem\CongNghePhanMem\obj\Release\CongNghePhanMem.csprojAssemblyReference.cache
+D:\WINDOW_C#\ptrien\phatTrienPhanMem\CongNghePhanMem\obj\Release\BillWindow.g.cs
+D:\WINDOW_C#\ptrien\phatTrienPhanMem\CongNghePhanMem\obj\Release\BookingWindow.g.cs
+D:\WINDOW_C#\ptrien\phatTrienPhanMem\CongNghePhanMem\obj\Release\FoodOderWindow.g.cs
+D:\WINDOW_C#\ptrien\phatTrienPhanMem\CongNghePhanMem\obj\Release\FoodTypeWindow.g.cs
+D:\WINDOW_C#\ptrien\phatTrienPhanMem\CongNghePhanMem\obj\Release\FoodWindow.g.cs
+D:\WINDOW_C#\ptrien\phatTrienPhanMem\CongNghePhanMem\obj\Release\LoginWindow.g.cs
+D:\WINDOW_C#\ptrien\phatTrienPhanMem\CongNghePhanMem\obj\Release\MainWindow.g.cs
+D:\WINDOW_C#\ptrien\phatTrienPhanMem\CongNghePhanMem\obj\Release\OderBill.g.cs
+D:\WINDOW_C#\ptrien\phatTrienPhanMem\CongNghePhanMem\obj\Release\StaffWindow.g.cs
+D:\WINDOW_C#\ptrien\phatTrienPhanMem\CongNghePhanMem\obj\Release\TableWindow.g.cs
+D:\WINDOW_C#\ptrien\phatTrienPhanMem\CongNghePhanMem\obj\Release\App.g.cs
+D:\WINDOW_C#\ptrien\phatTrienPhanMem\CongNghePhanMem\obj\Release\GeneratedInternalTypeHelper.g.cs
+D:\WINDOW_C#\ptrien\phatTrienPhanMem\CongNghePhanMem\obj\Release\CongNghePhanMem_MarkupCompile.cache
+D:\WINDOW_C#\ptrien\phatTrienPhanMem\CongNghePhanMem\obj\Release\CongNghePhanMem_MarkupCompile.lref

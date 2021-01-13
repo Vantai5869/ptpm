@@ -1,0 +1,78 @@
+﻿<Window x:Class="CongNghePhanMem.OderBill"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:CongNghePhanMem"
+        mc:Ignorable="d"
+        xmlns:materialDesign="http://materialdesigninxaml.net/winfx/xaml/themes"
+        WindowStartupLocation="CenterScreen"
+        x:Name="window"
+        Title="Hóa đơn" Height="450" Width="800">
+   
+        <ScrollViewer>
+        <Grid>
+            <Grid x:Name="areaBill">
+            <Grid.RowDefinitions>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid Grid.Row="0">
+                <TextBlock  HorizontalAlignment="Center" Text="Nhà Hàng Buffet Lẩu Bung" FontSize="30" FontFamily="Gigi" ></TextBlock>
+                <TextBlock HorizontalAlignment="Center" Margin="0 40" Text="34 Triều Khúc-Tân Triều-Thanh Trì-Hà Nội "></TextBlock>
+                <TextBlock Margin="0 60 0 35" HorizontalAlignment="Center" FontSize="25" >Phiếu Thanh Toán</TextBlock>
+            </Grid>
+            <Grid Grid.Row="1">
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                <Grid Grid.Column="0" HorizontalAlignment="Center">
+                    <TextBlock Margin="0 20">Thời gian: <TextBlock x:Name="payTime"></TextBlock> </TextBlock>
+                </Grid>
+                <Grid Grid.Column="1" HorizontalAlignment="Center">
+                   
+                </Grid>
+            </Grid>
+                
+            <Grid HorizontalAlignment="Center" VerticalAlignment="Center" Grid.Row="2" Margin="0 20">
+                <materialDesign:Card Grid.Row="1" Margin="5">
+                    <ListView Name="lvBill">
+                        <ListView.View>
+                            <GridView>
+                                <GridViewColumn
+                                            DisplayMemberBinding="{Binding name}"
+                                            Header="Tên Món"
+                                            TextElement.FontSize="20"
+                                            TextElement.FontWeight="Bold" />
+                                <GridViewColumn
+                                            DisplayMemberBinding="{Binding price}"
+                                            Header="Giá"
+                                            TextElement.FontSize="20"
+                                            TextElement.FontWeight="Bold" />
+                                <GridViewColumn
+                                            DisplayMemberBinding="{Binding number}"
+                                            Header="Số Lượng"
+                                            TextElement.FontSize="20"
+                                            TextElement.FontWeight="Bold" />
+                                <GridViewColumn
+                                            DisplayMemberBinding="{Binding pay}"
+                                            Header="Thành Tiền"
+                                            TextElement.FontSize="20"
+                                            TextElement.FontWeight="Bold" />
+                            </GridView>
+                        </ListView.View>
+                    </ListView>
+                </materialDesign:Card>
+            </Grid>
+            <Grid Grid.Row="3">
+                <TextBlock HorizontalAlignment="Center" Margin="0 30" FontSize="20" >Tổng thanh toán: <TextBlock FontWeight="Bold" x:Name="payTotal" ></TextBlock></TextBlock>
+            </Grid>
+        </Grid>
+             <Button HorizontalAlignment="Center" VerticalAlignment="Bottom"  FontSize="18" Click="PrintClick">In hóa đơn</Button>
+        </Grid>
+       
+    </ScrollViewer>
+</Window>
