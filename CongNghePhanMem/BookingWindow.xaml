@@ -40,49 +40,38 @@
                     Width="120"
                     Margin="5"
                     Content="Thanh toán"/>
-
             </WrapPanel>
         </materialDesign:Card>
 
         <materialDesign:Card Grid.Row="1" Margin="5">
-            <Grid Grid.Row="1" Grid.Column="1">
-                <Grid
-                    Grid.Row="1"
-                    Grid.Column="1"
-                    Background="#FFF1F1F1">
-                    <StackPanel>
-                        <StackPanel Margin="20,0">
-                            <ListBox ItemsSource="{Binding List}"
+            <Grid Background="#FFF1F1F1">
+                <StackPanel Margin="20,0">
+                    <ListBox ItemsSource="{Binding List}"
                                 SelectedItem="{Binding SelectedItem}"
                                 Height="350"
                                 Background="#D8BFD8">
-                                <ItemsControl.ItemTemplate>
-                                    <DataTemplate>
-                                        <Border
-                                            Width="80"
-                                            Height="80"
-                                            Margin="10"
-                                            Background="{Binding status}">
-                                            <StackPanel>
-                                                <TextBlock
-                                                    Margin="5"
+                        <ItemsControl.ItemTemplate>
+                            <DataTemplate>
+                                <Border   Width="80"
+                                          Height="80"
+                                          Margin="10"
+                                          Background="{Binding status}">
+                                    <StackPanel>
+                                        <TextBlock  Margin="5"
                                                     FontFamily="Franklin Gothic Medium"
                                                     FontSize="17"
                                                     Text="{Binding name, StringFormat={}{0:C}}" />
-                                            </StackPanel>
-                                        </Border>
-                                    </DataTemplate>
-
-                                </ItemsControl.ItemTemplate>
-                                <ItemsControl.ItemsPanel>
-                                    <ItemsPanelTemplate>
-                                        <WrapPanel />
-                                    </ItemsPanelTemplate>
-                                </ItemsControl.ItemsPanel>
-                            </ListBox>
-                        </StackPanel>
-                    </StackPanel>
-                </Grid>
+                                    </StackPanel>
+                                </Border>
+                            </DataTemplate>
+                        </ItemsControl.ItemTemplate>
+                        <ItemsControl.ItemsPanel>
+                            <ItemsPanelTemplate>
+                                <WrapPanel />
+                            </ItemsPanelTemplate>
+                        </ItemsControl.ItemsPanel>
+                    </ListBox>
+                </StackPanel>
             </Grid>
         </materialDesign:Card>
     </Grid>

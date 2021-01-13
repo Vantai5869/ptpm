@@ -60,7 +60,7 @@ namespace CongNghePhanMem.ViewModel
         private string RealtxtPassword;
         public ViewModel()
         {
-            UrlDifine(0);
+            UrlDifine(1);
            
             BtnLoginCommand = new RelayCommand<object>((p) =>
             {
