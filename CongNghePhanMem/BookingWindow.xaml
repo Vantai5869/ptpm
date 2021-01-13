@@ -40,6 +40,18 @@
                     Width="120"
                     Margin="5"
                     Content="Thanh toán"/>
+                <Button
+                    CommandParameter="{Binding ElementName=TestWindow}"
+                    Command="{Binding ChangeTableCommand}"
+                    Width="120"
+                    Margin="5"
+                    Content="Chuyển bàn"/>
+                <Button
+                    CommandParameter="{Binding ElementName=TestWindow}"
+                    Command="{Binding MergeTableCommand}"
+                    Width="120"
+                    Margin="5"
+                    Content="Gộp bàn"/>
             </WrapPanel>
         </materialDesign:Card>
 
@@ -50,28 +62,36 @@
                                 SelectedItem="{Binding SelectedItem}"
                                 Height="350"
                                 Background="#D8BFD8">
-                        <ItemsControl.ItemTemplate>
-                            <DataTemplate>
-                                <Border   Width="80"
-                                          Height="80"
-                                          Margin="10"
-                                          Background="{Binding status}">
-                                    <StackPanel>
-                                        <TextBlock  Margin="5"
+                                <ItemsControl.ItemTemplate>
+                                    <DataTemplate>
+                                        <StackPanel
+                                            HorizontalAlignment="Center"
+                                            VerticalAlignment="Center"
+                                            Width="150"
+                                            Height="150">
+                                            <materialDesign:PackIcon Kind="TableFurniture" 
+                                                                     Width="100"
+                                                                     Height="100"
+                                                                     HorizontalAlignment="Center"
+                                                                     VerticalAlignment="Center"
+                                                                     Foreground="{Binding status}"/>
+                                            <TextBlock HorizontalAlignment="Center"
+                                                       VerticalAlignment="Center"
+                                                    Margin="5"
                                                     FontFamily="Franklin Gothic Medium"
                                                     FontSize="17"
                                                     Text="{Binding name, StringFormat={}{0:C}}" />
-                                    </StackPanel>
-                                </Border>
-                            </DataTemplate>
-                        </ItemsControl.ItemTemplate>
-                        <ItemsControl.ItemsPanel>
-                            <ItemsPanelTemplate>
-                                <WrapPanel />
-                            </ItemsPanelTemplate>
-                        </ItemsControl.ItemsPanel>
-                    </ListBox>
-                </StackPanel>
+                                        </StackPanel>
+                                    </DataTemplate>
+
+                                </ItemsControl.ItemTemplate>
+                                <ItemsControl.ItemsPanel>
+                                    <ItemsPanelTemplate>
+                                        <WrapPanel />
+                                    </ItemsPanelTemplate>
+                                </ItemsControl.ItemsPanel>
+                            </ListBox>
+                        </StackPanel>
             </Grid>
         </materialDesign:Card>
     </Grid>

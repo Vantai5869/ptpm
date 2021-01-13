@@ -13,7 +13,7 @@ namespace CongNghePhanMem.ViewModel
     public class ViewModel : BaseViewModel
     {
         
-        public static string apiFoodTypeUrl, apiEditFoodTypeUrl, apiDeleteFoodTypeUrl, foodTypeString,
+        public static string apiFoodTypeUrl, apiEditFoodTypeUrl, apiDeleteFoodTypeUrl, foodTypeString, apiChangeTableUrl, apiMergeTableUrl,
             apiFoodUrl, apiEditFoodUrl, apiDeleteFoodUrl, apiSearchFoodUrl, apiTableUrl, apiEditTableUrl, apiDeleteTableUrl,
             apiBillUrl, apiDeleteBillTypeUrl, apiDeleteBillUrl, apigetByFoodTypeUrl, apiTableBillUrl, apiStatusTableTypeUrl,apiLogin, apiOverview, LoginToken = null;
         public ICommand BtnLoginCommand { get; set; }
@@ -158,11 +158,13 @@ namespace CongNghePhanMem.ViewModel
                 apiDeleteBillTypeUrl = "http://res.com/api/bill/delete";
                 apiDeleteBillUrl = "http://res.com/api/delete/bill/";
                 apiStatusTableTypeUrl = "http://res.com/api/table/status/";
+                apiMergeTableUrl = "http://res.com/api/bill/mergeTable/";
 
                 //table
                 apiTableUrl = "http://res.com/api/table";
                 apiEditTableUrl = "http://res.com/api/table/update/";
                 apiDeleteTableUrl = "http://res.com/api/table/delete/";
+                apiChangeTableUrl = "http://res.com/api/table/changeTable/";
 
                 //login
                 apiLogin = "http://res.com/api/login";

@@ -4,16 +4,28 @@
 winexe
 C#
 .cs
+<<<<<<< HEAD
+G:\Laptrinh\ptpm\CongNghePhanMem\obj\Debug\
+=======
 D:\laptrinh\phatTrienPhanMem\ptpm\CongNghePhanMem\obj\Debug\
+>>>>>>> b2577a0c539582fe259ccc12191fad97d76ca5cd
 CongNghePhanMem
 none
 false
 DEBUG;TRACE
+<<<<<<< HEAD
+G:\Laptrinh\ptpm\CongNghePhanMem\App.xaml
+11-909439431
+
+35-1471094106
+23-1125282678
+=======
 D:\laptrinh\phatTrienPhanMem\ptpm\CongNghePhanMem\App.xaml
 11-909439431
 
 35-1471094106
 23709660985
+>>>>>>> b2577a0c539582fe259ccc12191fad97d76ca5cd
 BillWindow.xaml;BookingWindow.xaml;FoodOderWindow.xaml;FoodTypeWindow.xaml;FoodWindow.xaml;LoginWindow.xaml;MainWindow.xaml;OderBill.xaml;ResourceXAML\MainResource.xaml;StaffWindow.xaml;TableWindow.xaml;
 
 True
