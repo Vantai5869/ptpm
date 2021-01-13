@@ -50,7 +50,8 @@
             Margin="5"
             VerticalAlignment="Stretch">
             <ScrollViewer VerticalScrollBarVisibility="Auto">
-                <ListView SelectedItem="{Binding SelectedItem, Mode=OneWayToSource, UpdateSourceTrigger=PropertyChanged}" ItemsSource="{Binding fTypeList}">
+                <ListView SelectedItem="{Binding SelectedItem, Mode=OneWayToSource,
+                                          UpdateSourceTrigger=PropertyChanged}" ItemsSource="{Binding fTypeList}">
                     <ListView.View>
                         <GridView>
                             <!--<GridViewColumn Header="Id" DisplayMemberBinding="{Binding id}"></GridViewColumn>-->

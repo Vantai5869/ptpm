@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 ﻿G:\Laptrinh\ptpm\CongNghePhanMem\obj\Debug\GeneratedInternalTypeHelper.g.i.cs
 FG:\Laptrinh\ptpm\CongNghePhanMem\App.xaml;;
 FG:\Laptrinh\ptpm\CongNghePhanMem\BillWindow.xaml;;
@@ -11,4 +12,11 @@ FG:\Laptrinh\ptpm\CongNghePhanMem\OderBill.xaml;;
 FG:\Laptrinh\ptpm\CongNghePhanMem\ResourceXAML\MainResource.xaml;;
 FG:\Laptrinh\ptpm\CongNghePhanMem\StaffWindow.xaml;;
 FG:\Laptrinh\ptpm\CongNghePhanMem\TableWindow.xaml;;
+=======
+﻿
+
+FD:\laptrinh\phatTrienPhanMem\ptpm\CongNghePhanMem\BookingWindow.xaml;;
+FD:\laptrinh\phatTrienPhanMem\ptpm\CongNghePhanMem\FoodTypeWindow.xaml;;
+FD:\laptrinh\phatTrienPhanMem\ptpm\CongNghePhanMem\FoodWindow.xaml;;
+>>>>>>> b2577a0c539582fe259ccc12191fad97d76ca5cd
 

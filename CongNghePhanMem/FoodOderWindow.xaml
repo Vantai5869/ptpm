@@ -25,21 +25,13 @@
             <ColumnDefinition Width="3*" />
             <ColumnDefinition Width="5*" />
         </Grid.ColumnDefinitions>
-        <Grid.RowDefinitions>
-            <RowDefinition Height="1*" />
-           
-        </Grid.RowDefinitions>
-        
-        
-        
-
-        <Grid Grid.Row="2" Grid.Column="0">
+        <Grid Grid.Column="0">
             <Grid.RowDefinitions>
-                <RowDefinition Height="1*" />
+                <RowDefinition Height="1.6*" />
                 <RowDefinition Height="8*" />
             </Grid.RowDefinitions>
             <Grid Grid.Row="0" Background="#ff7f50">
-                <TextBlock Foreground="Gold" FontSize="40" HorizontalAlignment="Center" VerticalAlignment="Center"  >FOOD ODER</TextBlock>
+                <TextBlock FontFamily="Cooper" Foreground="Gold" FontSize="40" HorizontalAlignment="Center" VerticalAlignment="Center"  >FOOD ODER</TextBlock>
             </Grid>
             <Grid Grid.Row="1">
                 <ScrollViewer
@@ -48,7 +40,7 @@
                     HorizontalScrollBarVisibility="Visible"
                     VerticalScrollBarVisibility="Visible">
                     <materialDesign:Card Grid.Row="1" Margin="5">
-                        <ListView Name="lvBill" ItemsSource="{Binding fBillList}">
+                        <ListView Name="lvBill" ItemsSource="{Binding fBillList}" Width="365">
                             <ListView.View>
                                 <GridView>
                                     <GridViewColumn
@@ -78,23 +70,22 @@
                     </materialDesign:Card>
                 </ScrollViewer>
             </Grid>
-            
         </Grid>
 
 
-        <Grid Background="LightBlue" Grid.Column="1" Grid.ColumnSpan="1" Margin="0.4,0,-0.4,-0.2">
+        <Grid Background="LightBlue" Grid.Column="1"  Margin="0.4,0,-0.4,-0.2">
             <Grid.RowDefinitions>
                 <RowDefinition Height="1*"/>
                 <RowDefinition Height="4*"/>
                 <RowDefinition Height="1*"/>
             </Grid.RowDefinitions>
-            <DockPanel>
+            <DockPanel Grid.Row="0" Background="BlanchedAlmond">
                 <ComboBox  
                     Width="120" Height="35" Background="AliceBlue" 
                     SelectedItem="{Binding SelectedItemFType}"
                     materialDesign:HintAssist.Hint="Loại món ăn"
                     ItemsSource="{Binding fTypeList}"
-                    HorizontalAlignment="Left" Margin="35">
+                    HorizontalAlignment="Left" Margin="50 5">
                     <ComboBox.ItemTemplate>
                         <DataTemplate>
                             <StackPanel >
@@ -104,9 +95,12 @@
                         </DataTemplate>
                     </ComboBox.ItemTemplate>
                 </ComboBox>
-                <TextBox x:Name="txtSearch" Text="{Binding Path=Filter, UpdateSourceTrigger=PropertyChanged}"  materialDesign:HintAssist.Hint=" Nhập tên món ăn:" Width="250" Height="35" Background="AliceBlue" Margin="5"/>
-                
+                <TextBox x:Name="txtSearch" 
+                         Text="{Binding Path=Filter, UpdateSourceTrigger=PropertyChanged}" 
+                         materialDesign:HintAssist.Hint=" Nhập tên món ăn:" Width="250" Height="35"
+                         Background="AliceBlue" Margin="5"/>
             </DockPanel>
+            
             <ListBox Grid.Row="1" 
                      SelectedItem="{Binding SelectedItem, Mode=OneWayToSource, UpdateSourceTrigger=PropertyChanged}" 
                      ItemsSource="{Binding foodList}">
@@ -135,7 +129,7 @@
                     </ItemsPanelTemplate>
                 </ItemsControl.ItemsPanel>
             </ListBox>
-            <Grid Grid.Row="2">
+            <Grid Grid.Row="2" Background="BlanchedAlmond">
                 <Grid.ColumnDefinitions>
                     <ColumnDefinition Width="1*"/>
                     <ColumnDefinition Width="1*"/>

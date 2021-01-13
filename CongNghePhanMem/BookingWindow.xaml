@@ -56,14 +56,9 @@
         </materialDesign:Card>
 
         <materialDesign:Card Grid.Row="1" Margin="5">
-            <Grid Grid.Row="1" Grid.Column="1">
-                <Grid
-                    Grid.Row="1"
-                    Grid.Column="1"
-                    Background="#FFF1F1F1">
-                    <StackPanel>
-                        <StackPanel Margin="20,0">
-                            <ListBox ItemsSource="{Binding List}"
+            <Grid Background="#FFF1F1F1">
+                <StackPanel Margin="20,0">
+                    <ListBox ItemsSource="{Binding List}"
                                 SelectedItem="{Binding SelectedItem}"
                                 Height="350"
                                 Background="#D8BFD8">
@@ -97,8 +92,6 @@
                                 </ItemsControl.ItemsPanel>
                             </ListBox>
                         </StackPanel>
-                    </StackPanel>
-                </Grid>
             </Grid>
         </materialDesign:Card>
     </Grid>

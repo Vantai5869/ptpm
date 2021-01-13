@@ -12,7 +12,7 @@
         DataContext="{StaticResource VM}">
 
     <Grid>
-        <materialDesign:Card Width="330" Height="150" HorizontalAlignment="Center" VerticalAlignment="Center">
+        <materialDesign:Card Width="330" Height="200" HorizontalAlignment="Center" VerticalAlignment="Center">
             <Grid>
                 <Grid.Resources>
                     <Style TargetType="Grid">
@@ -23,20 +23,28 @@
                     <RowDefinition></RowDefinition>
                     <RowDefinition></RowDefinition>
                     <RowDefinition></RowDefinition>
+                    <RowDefinition></RowDefinition>
                 </Grid.RowDefinitions>
                 <Grid Grid.Row="0">
+                    <TextBox Text="Welcome To Buffet lẩu Bung" FontSize="20" FontFamily="Script MT Bold"
+                             HorizontalAlignment="Center" VerticalAlignment="Center"/>
+
+                </Grid>
+                <Grid Grid.Row="1">
                     <TextBox materialDesign:HintAssist.Hint="Tên đăng nhập"
                              Text="{Binding Path=TxtUsername, UpdateSourceTrigger=PropertyChanged}"
                              Style="{StaticResource MaterialDesignFloatingHintTextBox}" />
+                    <materialDesign:PackIcon HorizontalAlignment="Right" Kind="Account" VerticalAlignment="Center"  />
                 </Grid>
-                <Grid Grid.Row="1">
+                <Grid Grid.Row="2">
                     <TextBox
                         x:Name="textboxPass"
                         materialDesign:HintAssist.Hint="Mật khẩu"
                         Text="{Binding  Path=TxtPassword, Mode=TwoWay, UpdateSourceTrigger=PropertyChanged }"
                         Style="{StaticResource MaterialDesignFloatingHintTextBox}"    />
+                    <materialDesign:PackIcon HorizontalAlignment="Right" VerticalAlignment="Center" Kind="Lock" />
                 </Grid>
-                <Grid Grid.Row="2">
+                <Grid Grid.Row="3">
                     <Grid.ColumnDefinitions>
                         <ColumnDefinition></ColumnDefinition>
                         <ColumnDefinition></ColumnDefinition>
